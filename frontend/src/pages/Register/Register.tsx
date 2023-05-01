@@ -63,7 +63,7 @@ const Register: React.FC = () => {
       phone: data.phone.replace(/\W|_/g, ""),
     };
 
-    fetch("http://localhost:8383/users", {
+    fetch(process.env.REACT_APP_API_URL + "/users", {
       method: "POST",
       body: JSON.stringify(objToSend),
       headers: {

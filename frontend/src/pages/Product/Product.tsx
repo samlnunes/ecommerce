@@ -31,7 +31,7 @@ const Product: React.FC = () => {
       quantity: quantity,
     };
 
-    fetch(`http://localhost:8383/cart/${userId}`, {
+    fetch(process.env.REACT_APP_API_URL + `/cart/${userId}`, {
       method: "PUT",
       body: JSON.stringify(objToSend),
       headers: {

@@ -32,7 +32,7 @@ const Login: React.FC = () => {
       password: data.password,
     };
 
-    fetch("http://localhost:8383/login", {
+    fetch(process.env.REACT_APP_API_URL + "/login", {
       method: "POST",
       body: JSON.stringify(objToSend),
       headers: {
