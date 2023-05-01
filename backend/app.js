@@ -9,7 +9,7 @@ const { addToCart, getCart } = require("./controllers/userCart");
 const cors = require("cors");
 
 const app = express();
-const port = 8383;
+const port = process.env.PORT || 8383;
 
 app.use(cors());
 app.use(bodyParser.json());

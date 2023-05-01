@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "env": {      
+      "PORT": "8080"
+    }
+  },
   "hosting": {
     "public": "frontend/build",
     "ignore": [
